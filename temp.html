@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temprature Converter</title>
+    <!--CSS link-->
+    <link rel="stylesheet" href="temp.css">
+    <!--box icons-->
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <!--font awesome cdn link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="temprature-converter">
+            <!--mobile icon here-->
+            <div class="mobile">
+                <p>9.30 AM</p>
+                <div>
+                    <i class='bx bx-signal-4' ></i>
+                    <i class='bx bx-wifi' ></i>
+                    <i class='bx bxs-battery' ></i>
+                </div>
+            </div>
+            <h2>Temprature Converter</h2>
+
+            <!--Showing the result-->
+            <div class="result">
+                <span class="result-heading">Result(in celsius)</span>
+                <h2 class="celsius-value" id="cel">1</h2>
+            </div>
+
+            <!--input-->
+            <div class="degree-type">
+                <!--for dergees reading-->
+                <div class="degree-field">
+                    <label for="degree">Degrees</label>
+                    <input type="number" name="degree" id="degree">
+                </div>
+
+                <!--for option select -->
+                <div class="temp-field">
+                    <label for="temp-type">Type</label>
+                    <select name="tempratures" id="temp-type" autocomplete="on">
+                        <option value="farhenheit" id="farhenheit">Farhenheit</option>
+                        <option value="kelvin" id="kelvin">Kelvin</option>
+                        
+                    </select>
+                </div>
+
+                <button id="convert-button">Convert</button>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <!--Script tags-->
+    <script src="app.js"></script>
+</body>
+</html>
